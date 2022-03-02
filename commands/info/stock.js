@@ -6,9 +6,8 @@ module.exports = {
 	permissions: [],
 	devOnly: false,
 	run: async ({ client, message, args }) => {
-		let data = await getStockPrice(args[0].toUpperCase());
-		message.reply(
-			`Stock Price for ${args[0].toUpperCase()} is ${data.data[0].open}`
-		);
+		const ticker = args[0].toUpperCase();
+		let data = await getStockPrice(ticker);
+		message.reply(`Stock Price for ${ticker} is ${data.open}`);
 	},
 };

@@ -5,7 +5,7 @@ const getStockPrice = async (ticker) => {
 
 	const res = await axios.get(endpoint);
 
-	return res.data;
+	return res.data.data[0];
 };
 
 module.exports = { getStockPrice };
