@@ -1,0 +1,26 @@
+{
+	"name": "discord-butler",
+	"version": "1.0.0",
+	"description": "A Discord Bot built using Discord.js. Used to make API calls and return the data.",
+	"main": "bot.js",
+	"scripts": {
+		"dev": "nodemon bot.js",
+		"start": "node bot.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/adampaulsackfield/discord-butler.git"
+	},
+	"keywords": [],
+	"author": "Adam Sackfield",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/adampaulsackfield/discord-butler/issues"
+	},
+	"homepage": "https://github.com/adampaulsackfield/discord-butler#readme",
+	"dependencies": {
+		"axios": "^0.26.0",
+		"discord.js": "^13.6.0",
+		"dotenv": "^16.0.0"
+	}
+}
