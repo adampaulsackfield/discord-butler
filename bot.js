@@ -27,6 +27,7 @@ client.loadSlashCommands(bot, false);
 
 client.on('interactionCreate', (interaction) => {
 	if (!interaction.isCommand()) return;
+
 	if (!interaction.isGuild()) {
 		return interaction.reply('This command can only used in a server');
 	}
